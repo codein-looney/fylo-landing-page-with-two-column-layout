@@ -4,6 +4,8 @@
     display: flex;
     align-items: center;
 
+    outline: 1px solid red; // REMOVE
+
     @media screen and (max-width: 992px) {
         flex-direction: column-reverse;
     }
@@ -12,6 +14,9 @@
         margin-left: 4em;
         display: flex;
         flex-direction: column;
+
+        outline: 1px solid red; // REMOVE
+
 
         @media screen and (max-width: 992px) {
             margin: 0;
@@ -90,7 +95,7 @@
             }
 
             .testimonial { 
-                padding: 2em 1.3em .5em 3em;
+                padding: 1em 2em 0 2em;
                 width: 40%;
                 margin-bottom: 7em;
                 background-color: white;
@@ -99,6 +104,7 @@
     
     
                 @media screen and (max-width: 992px) {
+                    padding: 1.8em 1.3em .5em 2.8em;
                     width: 70%;
                 }
     
@@ -117,17 +123,21 @@
                 }
     
                 .info {
-                    margin: 1em 0;
+                    margin: 1.3em 0;
                     width: 100%;
                     display: inline-flex;
-    
+
+                    @media screen and (max-width: 992px) {
+                        display: inline-flex;
+                    }
+
                     .avatar {
                         width: 30px;
                         height: 100%;
                         border-radius: 50%;
 
                         @media screen and (max-width: 992px) {
-                            width: 23px;
+                            width: 28px;
                         }
                     }
     
@@ -137,6 +147,11 @@
                         gap: .2em;
                         margin: 0 0 1em .8em;
                         font-family: $font-primary;
+
+                        @media screen and (max-width: 992px) {
+                            line-height: 1em;
+                            margin-top: .3em;
+                        }
     
                         .name {
                             font-size: .7em;
@@ -163,6 +178,8 @@
 
     .content-secondary {
         margin-top: 10em;
+
+        outline: 1px solid red; // REMOVE
 
         @media screen and (max-width: 992px) {
             margin-top: 5em;

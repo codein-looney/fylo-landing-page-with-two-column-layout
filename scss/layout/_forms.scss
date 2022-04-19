@@ -32,21 +32,38 @@
 
     @media screen and (max-width: 992px) {
         flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 1.5em;
     }
 
     .cta-content {
         margin-left: 4em;
 
+        @media screen and (max-width: 992px) {
+            margin: 0;
+        }
+
         .cta-title {
             font-size: 1.7em;
             color: $Light-Grayish-Blue;
             margin-bottom: .7em;
+
+            @media screen and (max-width: 992px) {
+                font-size: 1.3em;
+            }
         }
 
         .cta-subtitle {
             font-size: .8em;
             max-width: 50%;
             line-height: 1.5em;
+
+            @media screen and (max-width: 992px) {
+                 max-width: 330px; 
+                 font-size: 1em;
+                 margin-bottom: 2em;
+            }
         }
     }
 
@@ -56,6 +73,13 @@
         display: flex;
         flex-direction: column;
         gap: .8em;
+
+        @media screen and (max-width: 992px) {
+            width: 100%;
+            margin: 0;
+            align-items: center;
+            gap: .6em;
+        }
 
         .input-secondary {
             padding: .8em;

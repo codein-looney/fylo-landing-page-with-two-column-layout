@@ -185,20 +185,40 @@ footer .logo-secondary {
 @media screen and (max-width: 992px) {
   .cta {
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 1.5em;
   }
 }
 .cta .cta-content {
   margin-left: 4em;
+}
+@media screen and (max-width: 992px) {
+  .cta .cta-content {
+    margin: 0;
+  }
 }
 .cta .cta-content .cta-title {
   font-size: 1.7em;
   color: #f6f6fe;
   margin-bottom: 0.7em;
 }
+@media screen and (max-width: 992px) {
+  .cta .cta-content .cta-title {
+    font-size: 1.3em;
+  }
+}
 .cta .cta-content .cta-subtitle {
   font-size: 0.8em;
   max-width: 50%;
   line-height: 1.5em;
+}
+@media screen and (max-width: 992px) {
+  .cta .cta-content .cta-subtitle {
+    max-width: 330px;
+    font-size: 1em;
+    margin-bottom: 2em;
+  }
 }
 .cta .form-secondary {
   width: 35%;
@@ -206,6 +226,14 @@ footer .logo-secondary {
   display: flex;
   flex-direction: column;
   gap: 0.8em;
+}
+@media screen and (max-width: 992px) {
+  .cta .form-secondary {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    gap: 0.6em;
+  }
 }
 .cta .form-secondary .input-secondary {
   padding: 0.8em;
@@ -215,6 +243,7 @@ footer .logo-secondary {
 .wrapper .container {
   display: flex;
   align-items: center;
+  outline: 1px solid red;
 }
 @media screen and (max-width: 992px) {
   .wrapper .container {
@@ -225,6 +254,7 @@ footer .logo-secondary {
   margin-left: 4em;
   display: flex;
   flex-direction: column;
+  outline: 1px solid red;
 }
 @media screen and (max-width: 992px) {
   .wrapper .container .content {
@@ -298,7 +328,7 @@ footer .logo-secondary {
   }
 }
 .wrapper .container .content .box-primary .testimonial {
-  padding: 2em 1.3em 0.5em 3em;
+  padding: 1em 2em 0 2em;
   width: 40%;
   margin-bottom: 7em;
   background-color: white;
@@ -307,6 +337,7 @@ footer .logo-secondary {
 }
 @media screen and (max-width: 992px) {
   .wrapper .container .content .box-primary .testimonial {
+    padding: 1.8em 1.3em 0.5em 2.8em;
     width: 70%;
   }
 }
@@ -324,9 +355,14 @@ footer .logo-secondary {
   }
 }
 .wrapper .container .content .box-primary .testimonial .info {
-  margin: 1em 0;
+  margin: 1.3em 0;
   width: 100%;
   display: inline-flex;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .container .content .box-primary .testimonial .info {
+    display: inline-flex;
+  }
 }
 .wrapper .container .content .box-primary .testimonial .info .avatar {
   width: 30px;
@@ -335,7 +371,7 @@ footer .logo-secondary {
 }
 @media screen and (max-width: 992px) {
   .wrapper .container .content .box-primary .testimonial .info .avatar {
-    width: 23px;
+    width: 28px;
   }
 }
 .wrapper .container .content .box-primary .testimonial .info .credentials {
@@ -344,6 +380,12 @@ footer .logo-secondary {
   gap: 0.2em;
   margin: 0 0 1em 0.8em;
   font-family: "Raleway", sans-serif;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .container .content .box-primary .testimonial .info .credentials {
+    line-height: 1em;
+    margin-top: 0.3em;
+  }
 }
 .wrapper .container .content .box-primary .testimonial .info .credentials .name {
   font-size: 0.7em;
@@ -366,6 +408,7 @@ footer .logo-secondary {
 }
 .wrapper .container .content-secondary {
   margin-top: 10em;
+  outline: 1px solid red;
 }
 @media screen and (max-width: 992px) {
   .wrapper .container .content-secondary {
