@@ -290,7 +290,15 @@ footer .logo-secondary {
     width: 15.3em;
   }
 }
-.wrapper .container .content .testimonial {
+@media screen and (max-width: 992px) {
+  .wrapper .container .content .box-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid red;
+  }
+}
+.wrapper .container .content .box-primary .testimonial {
   padding: 1em 2em 0 2em;
   width: 40%;
   margin-bottom: 7em;
@@ -298,35 +306,41 @@ footer .logo-secondary {
   border-radius: 0.5em;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.wrapper .container .content .testimonial .quotes {
+@media screen and (max-width: 992px) {
+  .wrapper .container .content .box-primary .testimonial {
+    width: 70%;
+    outline: 1px solid red;
+  }
+}
+.wrapper .container .content .box-primary .testimonial .quotes {
   margin: 0.5em 0 0.8em 0;
 }
-.wrapper .container .content .testimonial .review {
+.wrapper .container .content .box-primary .testimonial .review {
   font-size: 0.8em;
   line-height: 1.5em;
 }
-.wrapper .container .content .testimonial .info {
+.wrapper .container .content .box-primary .testimonial .info {
   margin: 1em 0;
   width: 100%;
   display: inline-flex;
 }
-.wrapper .container .content .testimonial .info .avatar {
+.wrapper .container .content .box-primary .testimonial .info .avatar {
   width: 30px;
   height: 100%;
   border-radius: 50%;
 }
-.wrapper .container .content .testimonial .info .credentials {
+.wrapper .container .content .box-primary .testimonial .info .credentials {
   display: flex;
   flex-direction: column;
   gap: 0.2em;
   margin: 0 0 1em 0.8em;
   font-family: "Raleway", sans-serif;
 }
-.wrapper .container .content .testimonial .info .credentials .name {
+.wrapper .container .content .box-primary .testimonial .info .credentials .name {
   font-size: 0.7em;
   font-weight: 700;
 }
-.wrapper .container .content .testimonial .info .credentials .enterprise {
+.wrapper .container .content .box-primary .testimonial .info .credentials .enterprise {
   font-size: 0.6em;
   font-weight: 400;
 }
