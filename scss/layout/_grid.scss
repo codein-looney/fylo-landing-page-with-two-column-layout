@@ -24,11 +24,12 @@
                 margin-bottom: .7em;
                 font-weight: 700;
                 line-height: 1.5em;
+                max-width: 90%;
+
 
                 @media screen and (max-width: 992px) {
                     margin: 1.5em 0 .8em 0;
                     font-size: 1.8em;
-                    max-width: 90%;
                 }
             }
             
@@ -86,11 +87,10 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                outline: 1px solid red;
             }
 
             .testimonial { 
-                padding: 1em 2em 0 2em;
+                padding: 2em 1.3em .5em 3em;
                 width: 40%;
                 margin-bottom: 7em;
                 background-color: white;
@@ -100,7 +100,6 @@
     
                 @media screen and (max-width: 992px) {
                     width: 70%;
-                    outline: 1px solid red;
                 }
     
                 .quotes {
@@ -109,7 +108,12 @@
     
                 .review {
                     font-size: .8em;
-                    line-height: 1.5em;
+                    line-height: 1.7em;
+
+                    @media screen and (max-width: 992px) {
+                        font-size: 1.2em;
+                        color: $Desaturated-Blue;
+                    }
                 }
     
                 .info {
@@ -117,11 +121,14 @@
                     width: 100%;
                     display: inline-flex;
     
-                    
                     .avatar {
                         width: 30px;
                         height: 100%;
                         border-radius: 50%;
+
+                        @media screen and (max-width: 992px) {
+                            width: 23px;
+                        }
                     }
     
                     .credentials {
@@ -134,11 +141,19 @@
                         .name {
                             font-size: .7em;
                             font-weight: 700;
+
+                            @media screen and (max-width: 992px) {
+                                font-size: .9em;
+                            }
                         }
     
                         .enterprise {
                             font-size: .6em;
                             font-weight: 400;
+
+                            @media screen and (max-width: 992px) {                               font-size: .6em;
+                                font-size: .7em;
+                            }
                         }
                     }
                 }

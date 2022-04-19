@@ -238,12 +238,12 @@ footer .logo-secondary {
   margin-bottom: 0.7em;
   font-weight: 700;
   line-height: 1.5em;
+  max-width: 90%;
 }
 @media screen and (max-width: 992px) {
   .wrapper .container .content .content-title {
     margin: 1.5em 0 0.8em 0;
     font-size: 1.8em;
-    max-width: 90%;
   }
 }
 .wrapper .container .content .content-subtitle {
@@ -295,11 +295,10 @@ footer .logo-secondary {
     display: flex;
     align-items: center;
     justify-content: center;
-    outline: 1px solid red;
   }
 }
 .wrapper .container .content .box-primary .testimonial {
-  padding: 1em 2em 0 2em;
+  padding: 2em 1.3em 0.5em 3em;
   width: 40%;
   margin-bottom: 7em;
   background-color: white;
@@ -309,7 +308,6 @@ footer .logo-secondary {
 @media screen and (max-width: 992px) {
   .wrapper .container .content .box-primary .testimonial {
     width: 70%;
-    outline: 1px solid red;
   }
 }
 .wrapper .container .content .box-primary .testimonial .quotes {
@@ -317,7 +315,13 @@ footer .logo-secondary {
 }
 .wrapper .container .content .box-primary .testimonial .review {
   font-size: 0.8em;
-  line-height: 1.5em;
+  line-height: 1.7em;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .container .content .box-primary .testimonial .review {
+    font-size: 1.2em;
+    color: #585989;
+  }
 }
 .wrapper .container .content .box-primary .testimonial .info {
   margin: 1em 0;
@@ -328,6 +332,11 @@ footer .logo-secondary {
   width: 30px;
   height: 100%;
   border-radius: 50%;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .container .content .box-primary .testimonial .info .avatar {
+    width: 23px;
+  }
 }
 .wrapper .container .content .box-primary .testimonial .info .credentials {
   display: flex;
@@ -340,9 +349,20 @@ footer .logo-secondary {
   font-size: 0.7em;
   font-weight: 700;
 }
+@media screen and (max-width: 992px) {
+  .wrapper .container .content .box-primary .testimonial .info .credentials .name {
+    font-size: 0.9em;
+  }
+}
 .wrapper .container .content .box-primary .testimonial .info .credentials .enterprise {
   font-size: 0.6em;
   font-weight: 400;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .container .content .box-primary .testimonial .info .credentials .enterprise {
+    font-size: 0.6em;
+    font-size: 0.7em;
+  }
 }
 .wrapper .container .content-secondary {
   margin-top: 10em;
