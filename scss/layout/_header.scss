@@ -1,0 +1,41 @@
+@use '../sass-utils/variables' as *;
+
+header {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font-primary;
+    color: $Very-Dark-Blue;
+
+    .navbar {
+        display: flex;
+        list-style: none;
+
+        li {
+            margin-right: 4em;
+            cursor: pointer;
+            transition: .3s;
+
+            @media screen and (max-width: 992px) {
+                font-size: .9em;
+                margin-right: 2em;
+            }
+
+            &:hover {
+                color: #bdbafa;
+            }
+        }
+    }
+
+    .logo-primary {
+        position: relative;
+        left: 5%;
+        cursor: pointer;
+
+        @media screen and (max-width: 992px) {
+            width: 120px;
+        }
+
+    }
+}

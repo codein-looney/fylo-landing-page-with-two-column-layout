@@ -1,0 +1,71 @@
+@use '../sass-utils/variables' as *;
+
+footer {
+    height: 50vh;
+    background-color: $Very-Dark-Blue;
+    color: $Light-Grayish-Blue;
+    font-size: 12px;
+
+    @media screen and (max-width: 992px) {
+        height: 100vh;
+    }
+    
+
+    .footer-links {
+        margin: 0 20em 0 5em;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
+        }
+        
+
+        .links {
+            list-style: none;
+
+            li a {
+                text-decoration: none;
+                color: $Light-Grayish-Blue;
+                line-height: 2.5em;
+            }
+
+            .footer-icons {
+                margin-right: 1em;
+            }
+        }
+
+        .link-gap {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .socials i {
+            padding: 0.5em;
+            margin-left: 1em;
+            border: 1px solid #c2d3ff;
+            font-size: 1em;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .socials i:nth-child(1) {
+            padding: 5.5px 8px;
+        }
+    }
+
+    .logo-secondary {
+        margin: 7em 0 1.5em 5em;
+
+        @media screen and (max-width: 992px) {
+            width: 120px;
+        }
+    }
+}
+
+.footer-secondary {
+    height: 1%;
+    background: black;
+}

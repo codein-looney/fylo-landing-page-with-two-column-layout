@@ -1,0 +1,30 @@
+@use '../sass-utils/variables' as *;
+
+.btn-primary {
+    border: none;
+    padding: 0 4em;
+    background-color: $Bright-Blue;
+    color: $Light-Grayish-Blue;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .8;
+    }
+
+    @media screen and (max-width: 992px) {
+        width: 82%;
+        padding: 1em;
+        border-radius: 3px;
+        margin-bottom: 2em;
+    }
+}
+
+.btn-secondary {
+    padding: .8em;
+    width: 40%;
+    border: none;
+    background-color: $Bright-Blue;
+    color: $Light-Grayish-Blue;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}

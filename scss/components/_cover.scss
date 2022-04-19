@@ -1,0 +1,38 @@
+.cover-primary {
+    width: 100%;
+
+    img {
+        margin: 2em 5em 0 0;
+        width: 80%;
+        float: right;
+
+        @media screen and (max-width: 992px) {
+            width: 100%;
+            float: none;
+        }
+    }
+}
+
+.cover-secondary {
+    width: 70%;
+    margin-top: 2em;
+
+    @media screen and (max-width: 992px) {
+        width: 100%;
+        margin-top: 5em;
+    }
+}
+
+.bg {
+    margin: 5em 0 0 0;
+    background-image: url(/images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 350% 100%;
+    background-position: center;
+
+    @media screen and (max-width: 992px) {
+        background-image: url(/images/bg-curve-mobile.svg);
+        background-size: 600% 100%;
+        ;
+    }
+}

@@ -1,0 +1,65 @@
+@use '../sass-utils/variables' as *;
+
+.form-primary {
+    display: flex;
+    gap: 1em;
+
+    @media screen and (max-width: 992px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-primary {
+        width: 50%;
+        padding: .7em;
+        border-color: 1px solid $Very-Dark-Blue;
+
+        @media screen and (max-width: 992px) {
+            padding: 1em;
+            width: 75%;
+        }
+    }
+}
+
+.cta {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $Desaturated-Blue;
+    color: $Light-Grayish-Blue;
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+    }
+
+    .cta-content {
+        margin-left: 4em;
+
+        .cta-title {
+            font-size: 1.7em;
+            color: $Light-Grayish-Blue;
+            margin-bottom: .7em;
+        }
+
+        .cta-subtitle {
+            font-size: .8em;
+            max-width: 50%;
+            line-height: 1.5em;
+        }
+    }
+
+    .form-secondary {
+        width: 35%;
+        margin-right: 8em;
+        display: flex;
+        flex-direction: column;
+        gap: .8em;
+
+        .input-secondary {
+            padding: .8em;
+            color: $Light-Gray;
+        }
+    }
+}

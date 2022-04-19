@@ -1,0 +1,19 @@
+@use '../sass-utils/variables' as *;
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body { 
+    font-family: $font-seconday;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-primary;
+    color: $Very-Dark-Blue;
+}
