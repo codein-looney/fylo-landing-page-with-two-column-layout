@@ -8,6 +8,8 @@ footer {
 
     @media screen and (max-width: 992px) {
         height: 100vh;
+
+        outline: 1px solid red;
     }
     
 
@@ -18,7 +20,10 @@ footer {
         justify-content: space-between;
 
         @media screen and (max-width: 992px) {
+            margin: 0;
+
             flex-direction: column;
+            outline: 1px solid red;
         }
         
 
@@ -60,12 +65,15 @@ footer {
         margin: 7em 0 1.5em 5em;
 
         @media screen and (max-width: 992px) {
-            width: 120px;
+            width: 16em;
+            margin: 5em 0 1.5em 3em;
+
         }
     }
 }
 
 .footer-secondary {
+    text-align: center;
     height: 1%;
     background: black;
 }

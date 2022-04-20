@@ -47,6 +47,14 @@ h6 {
   cursor: pointer;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+.btn-secondary:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 992px) {
+  .btn-secondary {
+    width: 303px;
+  }
+}
 
 .cover-primary {
   width: 100%;
@@ -97,6 +105,7 @@ footer {
 @media screen and (max-width: 992px) {
   footer {
     height: 100vh;
+    outline: 1px solid red;
   }
 }
 footer .footer-links {
@@ -107,7 +116,9 @@ footer .footer-links {
 }
 @media screen and (max-width: 992px) {
   footer .footer-links {
+    margin: 0;
     flex-direction: column;
+    outline: 1px solid red;
   }
 }
 footer .footer-links .links {
@@ -142,11 +153,13 @@ footer .logo-secondary {
 }
 @media screen and (max-width: 992px) {
   footer .logo-secondary {
-    width: 120px;
+    width: 16em;
+    margin: 5em 0 1.5em 3em;
   }
 }
 
 .footer-secondary {
+  text-align: center;
   height: 1%;
   background: black;
 }
@@ -175,7 +188,7 @@ footer .logo-secondary {
 }
 
 .cta {
-  height: 40vh;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -188,6 +201,7 @@ footer .logo-secondary {
     text-align: center;
     justify-content: center;
     padding-bottom: 1.5em;
+    height: 380px;
   }
 }
 .cta .cta-content {
@@ -236,14 +250,19 @@ footer .logo-secondary {
   }
 }
 .cta .form-secondary .input-secondary {
+  width: 80%;
   padding: 0.8em;
   color: #bfbfbf;
+}
+@media screen and (max-width: 992px) {
+  .cta .form-secondary .input-secondary {
+    width: 280px;
+  }
 }
 
 .wrapper .container {
   display: flex;
   align-items: center;
-  outline: 1px solid red;
 }
 @media screen and (max-width: 992px) {
   .wrapper .container {
@@ -254,7 +273,6 @@ footer .logo-secondary {
   margin-left: 4em;
   display: flex;
   flex-direction: column;
-  outline: 1px solid red;
 }
 @media screen and (max-width: 992px) {
   .wrapper .container .content {
@@ -312,7 +330,7 @@ footer .logo-secondary {
 }
 .wrapper .container .content .information .solid {
   width: 10.3em;
-  margin: 0.5em 0 4em 0;
+  margin: 0.2em 0 4em 0;
   border: 0.7px solid #3c9f8f;
 }
 @media screen and (max-width: 992px) {
@@ -320,8 +338,12 @@ footer .logo-secondary {
     width: 15.3em;
   }
 }
+.wrapper .container .content .box-primary {
+  margin: -1.5em 0 -1em 0;
+}
 @media screen and (max-width: 992px) {
   .wrapper .container .content .box-primary {
+    margin: 1em 0 1.5em 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -333,7 +355,7 @@ footer .logo-secondary {
   margin-bottom: 7em;
   background-color: white;
   border-radius: 0.5em;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(163, 163, 208, 0.25) 0px 6px 12px -2px, rgba(92, 82, 82, 0.3) 0px 3px 7px -3px;
 }
 @media screen and (max-width: 992px) {
   .wrapper .container .content .box-primary .testimonial {
@@ -408,7 +430,6 @@ footer .logo-secondary {
 }
 .wrapper .container .content-secondary {
   margin-top: 10em;
-  outline: 1px solid red;
 }
 @media screen and (max-width: 992px) {
   .wrapper .container .content-secondary {
@@ -426,7 +447,6 @@ footer .logo-secondary {
   .wrapper .container .content-secondary .secondary-title {
     text-align: center;
     max-width: 100%;
-    margin-bottom: 1.5em;
   }
 }
 .wrapper .container .content-secondary .secondary-subtitle {
