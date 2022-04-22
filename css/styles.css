@@ -8,7 +8,6 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
-
 h1,
 h2,
 h3,
@@ -104,8 +103,8 @@ footer {
 }
 @media screen and (max-width: 992px) {
   footer {
-    height: 100vh;
-    outline: 1px solid red;
+    height: 75vh;
+    padding-bottom: 2em;
   }
 }
 footer .footer-links {
@@ -116,13 +115,15 @@ footer .footer-links {
 }
 @media screen and (max-width: 992px) {
   footer .footer-links {
-    margin: 0;
+    margin: auto;
+    gap: 2em;
+    font-size: 1.4em;
     flex-direction: column;
-    outline: 1px solid red;
   }
 }
 footer .footer-links .links {
   list-style: none;
+  margin: 1em 0 0 3em;
 }
 footer .footer-links .links li a {
   text-decoration: none;
@@ -145,8 +146,35 @@ footer .footer-links .socials i {
   border-radius: 50%;
   cursor: pointer;
 }
+@media screen and (max-width: 992px) {
+  footer .footer-links .socials i {
+    margin-left: 0.5em;
+  }
+}
 footer .footer-links .socials i:nth-child(1) {
-  padding: 5.5px 8px;
+  padding: 5.9px 8.5px;
+}
+footer .footer-links .socials i:nth-child(1):hover {
+  color: #4267B2;
+  border: 1px solid #4267B2;
+}
+@media screen and (max-width: 992px) {
+  footer .footer-links .socials i:nth-child(1) {
+    padding: 7.9px 11.8px;
+  }
+}
+footer .footer-links .socials i:nth-child(2):hover {
+  color: #1DA1F2;
+  border: 1px solid #1DA1F2;
+}
+footer .footer-links .socials i:nth-child(3):hover {
+  color: #405DE6;
+  border: 1px solid #405DE6;
+}
+@media screen and (max-width: 992px) {
+  footer .footer-links .socials {
+    text-align: center;
+  }
 }
 footer .logo-secondary {
   margin: 7em 0 1.5em 5em;

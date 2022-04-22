@@ -6,10 +6,10 @@ footer {
     color: $Light-Grayish-Blue;
     font-size: 12px;
 
-    @media screen and (max-width: 992px) {
-        height: 100vh;
 
-        outline: 1px solid red;
+    @media screen and (max-width: 992px) {
+        height: 75vh;
+        padding-bottom: 2em;
     }
     
 
@@ -20,15 +20,15 @@ footer {
         justify-content: space-between;
 
         @media screen and (max-width: 992px) {
-            margin: 0;
-
-            flex-direction: column;
-            outline: 1px solid red;
+            margin: auto;
+            gap: 2em;
+            font-size: 1.4em;
+            flex-direction: column;           
         }
         
-
         .links {
             list-style: none;
+            margin: 1em 0 0 3em;
 
             li a {
                 text-decoration: none;
@@ -54,11 +54,46 @@ footer {
             font-size: 1em;
             border-radius: 50%;
             cursor: pointer;
+
+            @media screen and (max-width: 992px) {
+                margin-left: .5em;
+
+            }
         }
 
         .socials i:nth-child(1) {
-            padding: 5.5px 8px;
+            padding: 5.9px 8.5px;
+
+            &:hover {
+                color: #4267B2;
+                border: 1px solid #4267B2; 
+            }
+
+            @media screen and (max-width: 992px) {
+                padding: 7.9px 11.8px;
+            }
         }
+
+        .socials i:nth-child(2) {
+            &:hover {
+                color: #1DA1F2;
+                border: 1px solid #1DA1F2;
+            }
+        }
+
+        .socials i:nth-child(3) {
+            &:hover {
+                color: #405DE6;
+                border: 1px solid #405DE6;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            .socials {
+                text-align: center;
+
+            }
+        }      
     }
 
     .logo-secondary {
