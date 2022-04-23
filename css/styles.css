@@ -8,6 +8,7 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+
 h1,
 h2,
 h3,
@@ -103,8 +104,8 @@ footer {
 }
 @media screen and (max-width: 992px) {
   footer {
-    height: 75vh;
-    padding-bottom: 2em;
+    height: 100vh;
+    padding-bottom: 5em;
   }
 }
 footer .footer-links {
@@ -129,6 +130,10 @@ footer .footer-links .links li a {
   text-decoration: none;
   color: #f6f6fe;
   line-height: 2.5em;
+  transition: 0.3s;
+}
+footer .footer-links .links li a:hover {
+  color: #585989;
 }
 footer .footer-links .links .footer-icons {
   margin-right: 1em;
@@ -187,6 +192,7 @@ footer .logo-secondary {
 }
 
 .footer-secondary {
+  padding: 0;
   text-align: center;
   height: 1%;
   background: black;

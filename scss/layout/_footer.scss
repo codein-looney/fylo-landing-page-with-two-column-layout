@@ -8,8 +8,8 @@ footer {
 
 
     @media screen and (max-width: 992px) {
-        height: 75vh;
-        padding-bottom: 2em;
+        height: 100vh;
+        padding-bottom: 5em;
     }
     
 
@@ -34,6 +34,11 @@ footer {
                 text-decoration: none;
                 color: $Light-Grayish-Blue;
                 line-height: 2.5em;
+                transition: .3s;
+
+                &:hover {
+                    color: $Desaturated-Blue;
+                }
             }
 
             .footer-icons {
@@ -108,6 +113,7 @@ footer {
 }
 
 .footer-secondary {
+    padding: 0;
     text-align: center;
     height: 1%;
     background: black;
