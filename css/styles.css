@@ -212,13 +212,19 @@ footer .logo-secondary {
 .form-primary .input-primary {
   width: 50%;
   padding: 0.7em;
-  border-color: 1px solid #070439;
 }
 @media screen and (max-width: 992px) {
   .form-primary .input-primary {
     padding: 1em;
     width: 75%;
   }
+}
+.form-primary .error {
+  position: absolute;
+  float: left;
+  top: 74%;
+  font-size: 0.7em;
+  color: red;
 }
 
 .cta {

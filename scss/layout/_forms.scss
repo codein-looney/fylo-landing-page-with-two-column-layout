@@ -13,12 +13,19 @@
     .input-primary {
         width: 50%;
         padding: .7em;
-        border-color: 1px solid $Very-Dark-Blue;
 
         @media screen and (max-width: 992px) {
             padding: 1em;
             width: 75%;
         }
+    }
+
+    .error {
+        position: absolute;
+        float: left;
+        top: 74%;
+        font-size: .7em;
+        color: red;
     }
 }
 
